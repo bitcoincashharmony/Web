@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="manifest" href="/manifest.json">
+    <title>Bitcoin Cash Harmony</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <img src="logo.svg" alt="Bitcoin Cash Harmony Logo" class="w-24 h-24 mx-auto mb-4">
+            <h1 class="text-5xl font-bold mb-4">Bitcoin Cash Harmony</h1>
+            <p class="text-xl mb-8">In Harmony with Bitcoin, Building a Shared Future</p>
+            <a href="#about" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Bitcoin Cash Harmony</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-600">Bitcoin Cash Harmony represents a new chapter in the evolution of cryptocurrency. We aim to bridge the gap between Bitcoin and Bitcoin Cash, creating a unified ecosystem that leverages the strengths of both networks.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Our Vision</h3>
+                    <p class="text-gray-600">We envision a future where Bitcoin and Bitcoin Cash work together to provide fast, affordable, and reliable transactions for everyone, while maintaining the core principles of decentralization and financial freedom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Bitcoin &amp; Bitcoin Cash: Better Together</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Bitcoin's Strengths</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Store of value and digital gold</li>
+                        <li>Strong network security</li>
+                        <li>Established brand recognition</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Bitcoin Cash's Advantages</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Fast and affordable transactions</li>
+                        <li>Scalable for everyday payments</li>
+                        <li>Compatible with Bitcoin infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Join the Harmony Movement</h2>
+            <p class="text-gray-600 mb-8">Be part of the future where Bitcoin and Bitcoin Cash work together to create a better financial system for everyone.</p>
+            <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&amp;copy; 2025 Bitcoin Cash Harmony. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
